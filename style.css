@@ -9,27 +9,30 @@ body {
 
 header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 header h1 {
+  margin: 0;
   font-size: 35px;
-  margin-bottom: 0;
+  text-align: center;
 }
 
-header h2 {
-  text-decoration: underline;
+div ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 header li {
+  width: 50%;
   font-weight: 600;
   list-style-type: none;
 }
-
-figure {
-  margin: 10px;
+ 
+header li img {
+  margin: 0 10px 0 0;
 }
 
 figure img {
@@ -45,15 +48,9 @@ figure img {
   justify-content: space-between;
   align-items: center;
 }
- 
-header li img {
-  margin: 0 10px 0 0;
-}
 
 .experiens {
   padding-right: 30px;
-  width: 600px;
-  flex-grow: 3;
 }
 
 .experiens h3 {
@@ -73,5 +70,61 @@ header li img {
 .education {
   padding-left: 30px;
   width: 200px;
-  flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  header li {
+    width: 100%;
+    font-weight: 600;
+    list-style-type: none;
+  }
+
+  figure img {
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  .additional-inf {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-inf div {
+    display: none;
+  }
+
+  .experiens {
+    display: inline-block;
+  }
+
+  .education {
+    padding: 0;
+    width: 100%;
+  }  
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 }
