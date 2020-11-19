@@ -1,0 +1,21 @@
+@import url("header.css");
+@import url("slider.css");
+@import url("services.css");
+@import url("portfolio.css");
+@import url("footer.css");
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: Lato, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
