@@ -3,57 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <title>Singolo</title>
 </head>
 <body>
   <header class="header">
-    <div>
-      <div>
+    <div class="header__wrapper">
+      <div class="logo">
         <h1>singolo</h1>
         <span>*</span>
       </div>
-      <nav class="header__nav">
+      <nav class="menu">
         <ul>
-          <li><a href="#home">home</a></li>
-          <li></li>
+          <li><a class="active" href="#home">home</a></li>
           <li><a href="#services">services</a></li>
-          <li></li>
           <li><a href="#portfolio">portfolio</a></li>
-          <li></li>
           <li><a href="#about">about</a></li>
-          <li></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="slider">
+    <section id="home" class="slider">
       <h2></h2>
-      <div class="slider__wrapper">
-        <div class="slider__controls">
-          <div class="slider__controls_arrow-left"></div>
-          <div class="slider__controls_arrow-right"></div>
-        </div>
-        <div class="slider__content">
-          <div class="phone-vertical">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+      <div class="slider__item-1 slide show"> 
+        <div class="slider__wrapper">  
+          <div class="slide-1">
+            <div class="phone-vertical">
+              <img src="img/phone-vertical.png" alt="phone-vertical">
+            </div>
+            <div class="phone-horizontal">
+              <img src="img/phone-horizontal.png" alt="phone-horizontal">
+            </div>
           </div>
-          <div class="phone-horizontal">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        </div> 
+      </div>
+      <div class="slider__item-2">
+        <div class="slider__wrapper">
+          <div class="slide-2">
+            <img src="img/Slide-2.png" alt="Slide-2">
           </div>
         </div>
-      </div>  
+      </div>
+      <div class="slider__controls">
+        <a href="#" class="early"><img class="slider__controls-arrow-left" src="img/arrow-left.svg"></img></a>
+        <a href="#" class="next"><img class="slider__controls-arrow-right" src="img/arrow-right.svg"></img></a>
+      </div> 
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <h2></h2>
       <div class="services__wrapper">
         <div class="services__header">
@@ -64,46 +64,57 @@
         </div>
         <ul class="services__items">
           <li class="services__item-1">
-            <img src="" alt="picture-services-item-1">
-            <h2>Custom Design</h2>
-            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, 
-              viverra lacus ut, ultrices velit.</p>
+            <img src="img/services-item-1.svg" alt="picture-services-item-1">
+            <div class="services__content">
+              <h3>Custom Design</h3>
+              <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, 
+                viverra lacus ut, ultrices velit.</p>
+            </div>    
           </li>
           <li class="services__item-2">
-            <img src="" alt="picture-services-item-2">
-            <h2>Inovative Ideas</h2>
-            <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, 
-              nec rutrum tellus dolor id lorem.</p>
+            <img src="img/services-item-2.svg" alt="picture-services-item-2">
+            <div class="services__content">
+              <h3>Inovative Ideas</h3>
+              <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, 
+                nec rutrum tellus dolor id lorem.</p>
+            </div>
           </li>
           <li class="services__item-3">
-            <img src="" alt="picture-services-item-3">
-            <h2>Love Is The Answer</h2>
-            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, 
-              et consequat felis. Quisque condimentum.
-            </p>
+            <img src="img/services-item-3.svg" alt="picture-services-item-3">
+            <div class="services__content">
+              <h3>Love Is The Answer</h3>
+              <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, 
+                et consequat felis. Quisque condimentum.</p>
+            </div>
           </li>
           <li class="services__item-4">
-            <img src="" alt="picture-services-item-4">
-            <h2>Responsive Layout</h2>
-            <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit 
-              nunc ligula. Praesent elit leo.</p>
+            <img src="img/services-item-4.svg" alt="picture-services-item-4">
+            <div class="services__content">
+              <h3>Responsive Layout</h3>
+              <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit 
+                nunc ligula. Praesent elit leo.</p>
+            </div>  
           </li>
           <li class="services__item-5">
-            <img src="" alt="picture-services-item-5">
-            <h2>24 / 7 Support</h2>
-            <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla 
-              a sem erat. Pellentesque egestas venenatis lorem .</p>
+            <img src="img/services-item-5.svg" alt="picture-services-item-5">
+            <div class="services__content">
+              <h3>24 / 7 Support</h3>
+              <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla 
+                a sem erat. Pellentesque egestas venenatis lorem .</p>
+            </div>
           </li>
           <li class="services__item-6">
-            <img src="" alt="picture-services-item-6">
-            <h2>Feel Like A Star</h2>
-            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. 
-              Fusce vitae aliquam tellus.</p>
+            <img src="img/services-item-6.svg" alt="picture-services-item-6">
+            <div class="services__content">
+              <h3>Feel Like A Star</h3>
+              <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. 
+                Fusce vitae aliquam tellus.</p>
+            </div>  
           </li>
         </ul>
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h2></h2>
       <div class="portfolio__wrapper">  
         <div class="portfolio__header">
@@ -113,38 +124,26 @@
         </div>
         <nav class="portfolio__nav">
           <ul>
-            <li><a href="">Web Design</a></li>
             <li><a href="">All</a></li>
+            <li><a href="">Web Design</a></li>
             <li><a href="">Graphic Design</a></li>
             <li><a href="">Artwork</a></li>
           </ul>
         </nav>
         <div class="portfolio__images">
           <ul>
-            <li></li>
-            <img src="" alt="portfolio-1">
-            <li></li>
-            <img src="" alt="portfolio-2">
-            <li></li>
-            <img src="" alt="portfolio-3">
-            <li></li>
-            <img src="" alt="portfolio-4">
-            <li></li>
-            <img src="" alt="portfolio-5">
-            <li></li>
-            <img src="" alt="portfolio-6">
-            <li></li>
-            <img src="" alt="portfolio-7">
-            <li></li>
-            <img src="" alt="portfolio-8">
-            <li></li>
-            <img src="" alt="portfolio-9">
-            <li></li>
-            <img src="" alt="portfolio-10">
-            <li></li>
-            <img src="" alt="portfolio-11">
-            <li></li>
-            <img src="" alt="portfolio-12">
+            <li><img src="img/portfolio-1.png" alt="portfolio-1"></li>
+            <li><img src="img/portfolio-2.png" alt="portfolio-2"></li>
+            <li><img src="img/portfolio-3.png" alt="portfolio-3"></li>
+            <li><img src="img/portfolio-4.png" alt="portfolio-4"></li>
+            <li><img src="img/portfolio-5.png" alt="portfolio-5"></li>
+            <li><img src="img/portfolio-6.png" alt="portfolio-6"></li>
+            <li><img src="img/portfolio-7.png" alt="portfolio-7"></li>
+            <li><img src="img/portfolio-8.png" alt="portfolio-8"></li>
+            <li><img src="img/portfolio-9.png" alt="portfolio-9"></li>
+            <li><img src="img/portfolio-10.png" alt="portfolio-10"></li>
+            <li><img src="img/portfolio-11.png" alt="portfolio-11"></li>
+            <li><img src="img/portfolio-12.png" alt="portfolio-12"></li>
           </ul>
         </div>
       </div>  
@@ -152,16 +151,36 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div>© Copyright 2013</div>
+      <p>© Copyright 2013</p>
       <div>
         <ul>
-          <li><img src="" alt="ico-facebook"></li>
-          <li><img src="" alt="ico-google"></li>
-          <li><img src="" alt="ico-twitter"></li>
-          <li><img src="" alt="ico-linkedin"></li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <img src="img/ico-facebook.png" alt="ico-facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/">
+              <img src="img/ico-google-plus.png" alt="ico-google-plus">
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://twitter.com">
+              <img src="img/ico-twitter.png" alt="ico-twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com">
+              <img src="img/ico-linkedin.png" alt="ico-linkedin">
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
+  
 </body>
 </html>
