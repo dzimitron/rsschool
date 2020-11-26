@@ -1,0 +1,64 @@
+.navigation {
+  display: flex;
+  height: 26px;
+  align-items: flex-end;
+  list-style: none;
+  margin-right: 40px;
+  li {
+    // margin: 0 0 0 10px;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+      text-transform: uppercase;
+      @extend %transition;
+      &:hover {
+        color: $color-nav;
+      }
+    }
+  }
+  li:nth-last-child(n+2)::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 0 15px 4px 15px;
+  }
+}
+
+ul li .active {
+  color: $color-primery;
+}
+
+.portfolio__nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+  li {
+    margin-right: 10px;
+    padding: 5px 6px 6px 6px;
+    border: 1px solid $color-text;
+    border-radius: 5px;
+    cursor: pointer;
+    @extend %transition;
+    &:hover {
+      border: 1px solid $color-tag;
+      color: $color-text;
+    }
+    p {
+      @include font(1.2rem, 1.2rem, 400);
+      color: $color-text;
+      margin: 0;
+      padding: 0;
+      @extend %transition;
+      &:hover {
+        color: $color-tag;
+      }
+    }
+  }
+}
+
+.tag_active, li {
+  
+}
