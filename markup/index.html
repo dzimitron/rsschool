@@ -10,6 +10,9 @@
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
+      <span class="hamburger">
+        <span class="hamburger__line"></span>
+      </span>
       <div class="logo">
         <h1>singolo</h1>
         <span>*</span>
@@ -26,13 +29,18 @@
     </div>
   </header>
   <section id="home" class="slider">
+    <div class="slider__controls">
+      <a href="#" class="early">
+        <!-- <img class="slider__controls-arrow_left" src="img/arrow-left.svg"></img> -->
+      </a>
+    </div>  
     <div class="slider__item-1 slide show"> 
       <div class="wrapper slider__wrapper">  
         <div class="slide-1">
-          <div class="phone-vertical">
+          <div class="phone_vertical">
             <img src="img/phone-vertical.png" alt="phone-vertical">
           </div>
-          <div class="phone-horizontal">
+          <div class="phone_horizontal">
             <img src="img/phone-horizontal.png" alt="phone-horizontal">
           </div>
         </div>
@@ -46,16 +54,13 @@
       </div>
     </div>
     <div class="slider__controls">
-      <a href="#" class="early">
-        <img class="slider__controls-arrow_left" src="img/arrow-left.svg"></img>
-      </a>
       <a href="#" class="next">
-        <img class="slider__controls-arrow_right" src="img/arrow-right.svg"></img>
-      </a>
+          <!-- <img class="slider__controls-arrow_right" src="img/arrow-right.svg"></img> -->
+      </a>    
     </div>
   </section>
-  <section id="services" class="services">
-    <div class="wrapper services__wrapper">
+  <section class="services">
+    <div id="services" class="wrapper services__wrapper">
       <div class="services__header">
         <h2>Our Services</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
@@ -121,14 +126,12 @@
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
           eget lacinia odio sem nec elit.</p>
       </div>
-      <nav class="portfolio__nav">
-        <ul>
-          <li class="tag_active"><p>All</p></li>
-          <li><p>Web Design</p></li>
-          <li><p>Graphic Design</p></li>
-          <li><p>Artwork</p></li>
-        </ul>
-      </nav>
+      <div class="portfolio__tags tags">
+        <span class="tag tag_selected">All</span>
+        <span class="tag">Web Design</span>
+        <span class="tag">Graphic Design</span>
+        <span class="tag">Artwork</span>
+      </div>
       <div class="portfolio__images">
         <ul>
           <li><img src="img/portfolio-1.png" alt="portfolio-1"></li>
@@ -150,7 +153,7 @@
   <footer class="footer">
     <div class="wrapper footer__wrapper">
       <div>
-        <p>© Copyright 2013</p>
+        <p>&copy; Copyright 2013</p>
         <ul>
           <li>
             <a class="ico ico_facebook" href="https://www.facebook.com/">

@@ -1,0 +1,50 @@
+// .portfolio__nav ul {
+//   display: flex;
+//   list-style: none;
+//   margin-right: 40px;
+//   li {
+//     margin-right: 10px;
+//     padding: 5px 6px 6px 6px;
+//     border: 1px solid $color-text;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     @extend %transition;
+//     &:hover {
+//       border: 1px solid $color-tag;
+//       color: $color-text;
+//     }
+//     p {
+//       @include font(1.2rem, 1.2rem, 400);
+//       color: $color-text;
+//       margin: 0;
+//       padding: 0;
+//       @extend %transition;
+//       &:hover {
+//         color: $color-tag;
+//       }
+//     }
+//   }
+// }
+
+.tags {
+  display: flex;
+  >* {
+    margin-right: 10px;
+  }
+}
+
+.tag {
+  border-radius: 5px;
+  padding: 5px 6px 6px 6px;
+  @include font(1.2rem, 1.2rem, 400);
+  border: 1px solid $color-text;
+  color: $color-text;
+  cursor: pointer;
+  &_selected {
+    border: 1px solid $color-tag;
+    color: $color-tag;
+  }
+  &:hover {
+    box-shadow: 0 0 5px $color-nav;
+  }
+}

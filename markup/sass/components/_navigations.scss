@@ -4,15 +4,20 @@
   align-items: flex-end;
   list-style: none;
   margin-right: 40px;
+  @include media-tablet {
+    display: none;
+  }
   li {
     // margin: 0 0 0 10px;
     a {
+      display: inline-block;
       color: #FFFFFF;
+      @include font (1.2rem, 1.44rem, 700);
       text-decoration: none;
       text-transform: uppercase;
-      @extend %transition;
+      transition: .3s ease;
       &:hover {
-        color: $color-nav;
+        color: #e2a8a4;
       }
     }
   }
@@ -29,36 +34,4 @@
 
 ul li .active {
   color: $color-primery;
-}
-
-.portfolio__nav ul {
-  display: flex;
-  list-style: none;
-  margin-right: 40px;
-  li {
-    margin-right: 10px;
-    padding: 5px 6px 6px 6px;
-    border: 1px solid $color-text;
-    border-radius: 5px;
-    cursor: pointer;
-    @extend %transition;
-    &:hover {
-      border: 1px solid $color-tag;
-      color: $color-text;
-    }
-    p {
-      @include font(1.2rem, 1.2rem, 400);
-      color: $color-text;
-      margin: 0;
-      padding: 0;
-      @extend %transition;
-      &:hover {
-        color: $color-tag;
-      }
-    }
-  }
-}
-
-.tag_active, li {
-  
 }

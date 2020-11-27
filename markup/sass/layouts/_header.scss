@@ -25,6 +25,9 @@
 
 .logo {
   margin-left: 40px;
+  @include media-tablet {
+    margin-left: -45px;
+  }
   h1 {
     display: inline;
     cursor: pointer;

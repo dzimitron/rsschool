@@ -1,5 +1,10 @@
 .ico {
   display: inline-block;
+  border-radius: 50%;
+  transition: .3s ease;
+  &:hover {
+    box-shadow: 0 0 5px $color-nav;
+  }
 }
 
 .ico_facebook {

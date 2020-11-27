@@ -7,11 +7,21 @@
 .portfolio__wrapper {
   @extend %flex;
   flex-direction: column;
+  &::before {
+    display: block;
+    content: " ";
+    margin-top: -95px;
+    height: 95px;
+    visibility: hidden;
+  }
 }
 
 .portfolio__header {
   justify-self: start;
   padding: 20px 40px 0 40px;
+  @include media-tablet {
+    padding: 0px 30px;
+  }
   h2 {
     margin: 40px 0 18px 0;
     @include font(3rem, 3.6rem, 900);
@@ -23,10 +33,29 @@
   }
 }
 
+.portfolio__tags {
+  padding: 0 40px 8px;
+  @include media-tablet {
+    padding: 0 30px 8px;
+  }
+}
+
 .portfolio__images ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px 20px;
   list-style: none;
   padding: 0 40px 60px 40px;
+  @include media-laptop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px 30px 30px;
+  }
 }
+
+.portfolio__images img {
+  width: 100%;
+  height: auto;
+} 
