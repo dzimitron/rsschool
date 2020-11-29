@@ -19,48 +19,53 @@
       </div>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li><a class="anchor active" href="#home">home</a></li>
-          <li><a class="anchor" href="#services">services</a></li>
-          <li><a class="anchor" href="#portfolio">portfolio</a></li>
-          <li><a class="anchor" href="#about">about</a></li>
-          <li><a class="anchor" href="#contact">contact</a></li>
+          <li><a class="active" href="#home">home</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section id="home" class="slider">
-    <div class="slider__controls">
-      <a href="#" class="early">
-        <!-- <img class="slider__controls-arrow_left" src="img/arrow-left.svg"></img> -->
-      </a>
-    </div>  
-    <div class="slider__item-1 slide show"> 
-      <div class="wrapper slider__wrapper">  
-        <div class="slide-1">
+
+  <section class="slider">
+    <span class="anchor" id="home"></span>
+    <div class="wrapper slider__wrapper"></div>
+
+      <div class="slider__controls">
+        <div class="slider__controls_wrapper">
+          <div>
+            <a href="#" class="early">
+            </a>
+            <a href="#" class="next">
+            </a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="slider__item_1 show">
+        <div class="item_1">
           <div class="phone_vertical">
             <img src="img/phone-vertical.png" alt="phone-vertical">
           </div>
           <div class="phone_horizontal">
             <img src="img/phone-horizontal.png" alt="phone-horizontal">
           </div>
-        </div>
-      </div> 
-    </div>
-    <div class="slider__item-2">
-      <div class="wrapper">
-        <div class="slide-2">
-          <img src="img/Slide-2.png" alt="Slide-2">
-        </div>
+        </div> 
       </div>
-    </div>
-    <div class="slider__controls">
-      <a href="#" class="next">
-          <!-- <img class="slider__controls-arrow_right" src="img/arrow-right.svg"></img> -->
-      </a>    
+
+      <div class="slider__item-2 hidden">
+          <div class="slide-2">
+            <img src="img/Slide-2.png" alt="Slide-2">
+          </div>
+      </div>
+
     </div>
   </section>
   <section class="services">
-    <div id="services" class="wrapper services__wrapper">
+    <span class="anchor" id="services"></span>
+    <div class="wrapper services__wrapper">
       <div class="services__header">
         <h2>Our Services</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
@@ -119,7 +124,8 @@
       </ul>
     </div>
   </section>
-  <section id="portfolio" class="portfolio">
+  <section class="portfolio">
+    <span class="anchor" id="portfolio"></span>
     <div class="wrapper potrfolio__wrapper">  
       <div class="portfolio__header">
         <h2>Portfolio</h2>

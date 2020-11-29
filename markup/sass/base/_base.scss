@@ -25,3 +25,7 @@ h2 {
 h3 {
   @include font(1.8rem, 1.8rem, 900);
 }
+
+.anchor {
+  @extend %anchor
+}
