@@ -1,29 +1,48 @@
 .slider {
-  display: none; 
+  height: 594px;
+  display: flex; 
   justify-content: center;
   background: $color-primery;
   border-bottom: 6px solid $color-border-primery;
   overflow: hidden;
+  transition: background 1s;
+  @include media-laptop {
+    width: 100%;
+    height: 58vw;
+  }
+}
+
+.slide_blue {
+  background: $color-background-slide;
+  border-bottom: 6px solid $color-border-primery;
+  transition: background 1s;
 }
 
 .slider__wrapper {
-  width: 1020px;
-  // height: 33vw;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  position: absolute;
+  width: $content-width;
+  height: 100%;
+  position: relative;
 }
 
 .slider__item_1 {
-  // width: 1000px;
-  // height: 33vw;
+  width: 97%;
   position: relative;
-  z-index: 10;
-  animation: slide 5s;
+  left: 0;
+  background: $color-primery;
+  transition: all 1s;
+  z-index: 1;
 }
 
-// @keyframes slide {
+.slider__item_1.hidden {
+  left: -100vw;
+  z-index: -1;
+}
+
+.slider__item_1.show {
+  left: 0;
+}
+
+// @keyframes slide_left {
 //   0% {
 //     left: 0;
 //   }
@@ -31,18 +50,17 @@
 //     left: -100%;
 //   }
 //   100% {
+//     left: -150%;
 //     z-index: 0;
 //   }
 // }
-// https://itchief.ru/lessons/html-and-css/css-height-relative-to-its-width
+
 
 
 .item_1 {
-  position: absolute;
-  left: 0;
-  top: 0;
+  height: 100%;
   justify-self: center;
-  padding: 55px 112px;
+  padding: 5% 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,25 +79,52 @@
   height: auto;
 }
 
-.slider__item-2 {
-  background: $color-background-slide;
+.slider__item_2 {
+  width: 94%;
+  padding: 0 3%;
   position: absolute;
-  height: auto;
-  left: 100%;
+  left: 0;
+  top: 0;
   z-index: 1;
-  overflow: hidden;
-  animation: slide 5s ;
-  // div {
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  // }
+  background: $color-background-slide;
+  border-bottom: 30px solid $color-background-slide;
+  transition: all 1s;
+  @include media-tablet {
+    padding: 0 3%;
+  }
 }
 
-.slide-2 {
-  // display: none;
+.slider__item_2.show {
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.slider__item_2.hidden {
+  left: 100vw;
+  z-index: 0;
+}
+
+// @keyframes slide2_left {
+//   0% {
+//     left: 100%;
+//     top: 0;
+//   }
+//   50% {
+//     left: 0;
+//     top: 0;
+//   }
+//   100% {
+//     left: 0;
+//     top: 0;
+//     z-index: 0;
+//   }
+// }
+
+.slide_2 {
+  height: 100%;
+  display: flex;
+  z-index: 15;
   img {
     max-width: 100%;
     height: auto;
@@ -94,18 +139,14 @@
   width: 100%;
   height: 100%;
   .slider__controls_wrapper {
-    margin-top: 32%;
     position: relative;
     width: $content-width;
-    height: 100%;
     div {
       display: flex;
       justify-content: space-between;
       align-items: center;
       justify-self: center;
       align-self: center;
-      max-width: 100%;
-      height: 50px;
       a {
         display: block;
         position: relative;
@@ -114,11 +155,29 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
+        @include media-tablet {
+          margin: 0 3%;
+          width: 30px;
+          height: 30px;
+        }
+        @include media-mobile {
+          margin: 0 2%;
+          width: 20px;
+          height: 20px;
+        }
         &:hover {
           width: 35px;
           height: 35px;
           border-radius: 50%;
           box-shadow: 0 0 10px rgba($color: #f0ed68, $alpha: 1.0);
+          @include media-tablet {
+            width: 30px;
+            height: 30px;
+          }
+          @include media-mobile {
+            width: 20px;
+            height: 20px;
+          }
         }
       }  
     }
@@ -127,6 +186,12 @@
 
 .early {
   background: url("../img/arrow-left.svg") center no-repeat;
+  @include media-tablet {
+    background: url("../img/arrow-left.svg") center/50% no-repeat;
+  }
+  @include media-mobile {
+    background: url("../img/arrow-left.svg") center/50% no-repeat;
+  }
   &:hover {
     background-position: 40% 50%;
   }
@@ -134,6 +199,12 @@
 
 .next {
   background: url("../img/arrow-right.svg") center no-repeat;
+  @include media-tablet {
+    background: url("../img/arrow-right.svg") center/50% no-repeat;
+  }
+  @include media-mobile {
+    background: url("../img/arrow-right.svg") center/50% no-repeat;
+  }
   &:hover {
     background-position: 60% 50%;
   }
