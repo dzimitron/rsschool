@@ -15,4 +15,26 @@ function onscroll(event) {
       })
     }
   })
-}
+};
+
+
+const BURGER = document.querySelector('.hamburger');
+const MENU = document.querySelector('.header__navigation');
+const BODYLOCK = document.querySelector('body');
+const LINKS = document.querySelector('.navigation');
+const LOGO = document.querySelector('.logo');
+
+BURGER.addEventListener('click', () => {
+  BURGER.classList.toggle('burger');
+  MENU.classList.toggle('menu_active');
+  BODYLOCK.classList.toggle('lock');
+  LOGO.classList.toggle('logo_active');
+
+});
+
+LINKS.addEventListener('click', () => {
+  BURGER.classList.toggle('burger');
+  MENU.classList.toggle('menu_active');
+  BODYLOCK.classList.toggle('lock');
+  LOGO.classList.toggle('logo_active');
+});

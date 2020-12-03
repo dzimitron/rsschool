@@ -29,3 +29,9 @@ h3 {
 .anchor {
   @extend %anchor
 }
+
+@include media-tablet {
+  body.lock {
+    overflow: hidden;
+  }
+}

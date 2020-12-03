@@ -13,12 +13,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media-tablet {
+    justify-content: center;
+  }
 }
 
 .logo {
   margin-left: 40px;
+  transition: all .3s;
   @include media-tablet {
-    margin-left: -45px;
+    justify-self: center;
+    margin: 0;
+    
   }
   h1 {
     display: inline;
@@ -30,5 +36,13 @@
     font-size: 2.5rem;
     color: $color-primery;
     cursor: pointer;
+  }
+}
+
+@include media-tablet {
+  .logo.logo_active {
+    z-index: 150;
+    position: absolute;
+    left: 71px;
   }
 }

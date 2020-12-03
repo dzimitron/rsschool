@@ -10,22 +10,26 @@
 
 .hamburger {
   display: none;
-  position: relative;
-  width: 25px;
-  height: 20px;
   @include media-tablet {
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 20px;
+    display: block;
     margin: 0 0 0 20px;
+    z-index: 150;
   }
   &::before {
     @extend %hamburger__line;
     top: 0;
     left: 0;
+    transition: all .3s;
   }
   &::after {
     @extend %hamburger__line;
     bottom: 0;
     left: 0;
+    transition: all .3s; 
   }
 }
 
@@ -33,4 +37,23 @@
   @extend %hamburger__line;
   top: calc( 50% - 1px );
   left: 0;
+  transition: all .3s; 
+}  
+
+  @include media-tablet {
+  .hamburger.burger::before {
+    transform: rotate(90deg);
+    left: 10px;
+    top: 9px;
+  }
+
+  .hamburger.burger::after {
+    transform: rotate(90deg);
+    left: -10px;
+    top: 9px;
+  }
+
+  .hamburger.burger span {
+    transform: rotate(90deg);
+  }
 }
