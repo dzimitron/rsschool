@@ -55,12 +55,45 @@ const SLIDE_1 = document.querySelector('.slider__item_1');
 EARLY.addEventListener('click', () => {
 
   BACKGROUND.classList.toggle('slide_blue');
-   
-  SLIDE_1.classList.toggle('show');
-  SLIDE_2.classList.toggle('show');
-  SLIDE_1.classList.toggle('hidden');
-  SLIDE_2.classList.toggle('hidden');
+ 
+  if (SLIDE_1.classList.contains('show') || SLIDE_1.classList.contains('show_right')) {
+    SLIDE_2.classList.add('show');
+    SLIDE_1.classList.add('hidden');
+    SLIDE_2.classList.remove('hidden');
+    SLIDE_1.classList.remove('show');
+    SLIDE_1.classList.remove('show_right', 'hidden_right');
+    SLIDE_2.classList.remove('show_right', 'hidden_right');
 
+  } else {
+    SLIDE_1.classList.add('show');
+    SLIDE_2.classList.add('hidden');
+    SLIDE_1.classList.remove('hidden');
+    SLIDE_2.classList.remove('show');
+    SLIDE_1.classList.remove('hidden_right');
+    SLIDE_2.classList.remove('hidden_right');
+  }
+});
+
+NEXT.addEventListener('click', () => {
+
+  BACKGROUND.classList.toggle('slide_blue');
+   
+  if (SLIDE_1.classList.contains('show') || SLIDE_1.classList.contains('show_right')) {
+    SLIDE_2.classList.add('show_right');
+    SLIDE_1.classList.add('hidden_right');
+    SLIDE_2.classList.remove('hidden_right');
+    SLIDE_1.classList.remove('show_right');
+    SLIDE_1.classList.remove('show', 'hidden');
+    SLIDE_2.classList.remove('show', 'hidden');
+
+  } else {
+    SLIDE_1.classList.add('show_right');
+    SLIDE_2.classList.add('hidden_right');
+    SLIDE_1.classList.remove('hidden_right');
+    SLIDE_2.classList.remove('show_right');
+    SLIDE_1.classList.remove('hidden', 'show');
+    SLIDE_2.classList.remove('hidden', 'show');
+  }
 });
 
 
@@ -84,6 +117,5 @@ TAGS.addEventListener('click', (event) => {
 
 // function ontags(event) {
 
-  
 // }
 
