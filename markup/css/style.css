@@ -280,7 +280,7 @@ h3 {
   background: #F06C64;
   border-bottom: 6px solid #EA676B;
   overflow: hidden;
-  transition: background 0.5s;
+  transition: background 1s;
 }
 @media (max-width: 1019px) {
   .slider {
@@ -292,7 +292,7 @@ h3 {
 .slide_blue {
   background: #648BF0;
   border-bottom: 6px solid #EA676B;
-  transition: background 0.5s;
+  transition: background 1s;
 }
 
 .slider__wrapper {
@@ -458,20 +458,20 @@ h3 {
     height: 20px;
   }
 }
-.slider__controls .slider__controls_wrapper div a:hover {
+.slider__controls .slider__controls_wrapper div a:hover, .slider__controls .slider__controls_wrapper div a:focus {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   box-shadow: 0 0 10px #f0ed68;
 }
 @media (max-width: 767px) {
-  .slider__controls .slider__controls_wrapper div a:hover {
+  .slider__controls .slider__controls_wrapper div a:hover, .slider__controls .slider__controls_wrapper div a:focus {
     width: 30px;
     height: 30px;
   }
 }
 @media (max-width: 374px) {
-  .slider__controls .slider__controls_wrapper div a:hover {
+  .slider__controls .slider__controls_wrapper div a:hover, .slider__controls .slider__controls_wrapper div a:focus {
     width: 20px;
     height: 20px;
   }
@@ -479,35 +479,47 @@ h3 {
 
 .early {
   background: url("../img/arrow-left.svg") center no-repeat;
+  background-position: 40% 50%;
 }
 @media (max-width: 767px) {
   .early {
     background: url("../img/arrow-left.svg") center/50% no-repeat;
+    background-position: 40% 50%;
   }
 }
 @media (max-width: 374px) {
   .early {
     background: url("../img/arrow-left.svg") center/50% no-repeat;
+    background-position: 40% 50%;
   }
 }
 .early:hover {
+  background-position: 30% 50%;
+}
+.early:active {
   background-position: 40% 50%;
 }
 
 .next {
   background: url("../img/arrow-right.svg") center no-repeat;
+  background-position: 60% 50%;
 }
 @media (max-width: 767px) {
   .next {
     background: url("../img/arrow-right.svg") center/50% no-repeat;
+    background-position: 60% 50%;
   }
 }
 @media (max-width: 374px) {
   .next {
     background: url("../img/arrow-right.svg") center/50% no-repeat;
+    background-position: 60% 50%;
   }
 }
 .next:hover {
+  background-position: 70% 50%;
+}
+.next:active {
   background-position: 60% 50%;
 }
 
