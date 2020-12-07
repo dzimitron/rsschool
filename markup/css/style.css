@@ -93,16 +93,18 @@ h3 {
   height: 32px;
 }
 
-.tags {
+#tags {
   display: flex;
+  pointer-events: none;
 }
-.tags > * {
+#tags > * {
   margin-right: 10px;
 }
 
 .tag {
   border-radius: 5px;
   padding: 3px 5px 4px 4px;
+  pointer-events: auto;
   font-size: 1.2rem;
   line-height: 1.2rem;
   font-weight: 400;

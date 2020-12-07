@@ -1,5 +1,6 @@
-.tags {
+#tags {
   display: flex;
+  pointer-events: none;
   >* {
     margin-right: 10px;
   }
@@ -8,6 +9,7 @@
 .tag {
   border-radius: 5px;
   padding: 3px 5px 4px 4px;
+  pointer-events: auto;
   @include font(1.2rem, 1.2rem, 400);
   border: 1px solid $color-text;
   color: $color-text;
