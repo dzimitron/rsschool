@@ -1,0 +1,37 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: Lato, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  @include font(2.5rem, 3rem, bold);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include font(3rem, 3.6rem, 900);
+}
+
+h3 {
+  @include font(1.8rem, 1.8rem, 900);
+}
+
+.anchor {
+  @extend %anchor
+}
+
+@include media-tablet {
+  body.lock {
+    overflow: hidden;
+  }
+}
