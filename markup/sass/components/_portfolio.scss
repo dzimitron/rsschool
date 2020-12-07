@@ -29,6 +29,7 @@
 
 .portfolio__tags {
   padding: 0 40px 8px;
+  user-select: none;
   @include media-tablet {
     padding: 0 30px 8px;
   }
@@ -45,6 +46,7 @@
   }
   @include media-tablet {
     grid-template-columns: repeat(2, 1fr);
+    gap: 13px 13px;
     padding: 0 30px 30px 30px;
   }
 }
@@ -53,4 +55,3 @@
   width: 100%;
   height: auto;
 } 
-

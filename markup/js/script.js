@@ -99,23 +99,23 @@ NEXT.addEventListener('click', () => {
 
 //Portfolio tabs
 
+function shuffle() {
+  var parent = document.getElementById("pictures");
+  var frag = document.createDocumentFragment();
+  while (parent.children.length) {
+      frag.appendChild(parent.children[Math.floor(Math.random() * parent.children.length)]);
+  }
+  parent.appendChild(frag);
+}
+
+
 const TAGS = document.getElementById('tags');
-// const TAG = document.querySelectorAll('.tag');
 
 TAGS.addEventListener('click', (event) => {
   TAGS.querySelectorAll('span').forEach(el => el.classList.remove('tag_selected'));
   event.target.classList.add('tag_selected');
+  TAGS.classList.remove('tag_selected');
+
+  shuffle();
+  
 });
-
-// TAGS.addEventListener('click', (event) => {
-//   function shuffle(array) {
-    
-//   }
-// }
-
-// document.addEventListener('click', ontags);
-
-// function ontags(event) {
-
-// }
-

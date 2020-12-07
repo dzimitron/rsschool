@@ -102,7 +102,7 @@ h3 {
 
 .tag {
   border-radius: 5px;
-  padding: 5px 6px 6px 6px;
+  padding: 3px 5px 4px 4px;
   font-size: 1.2rem;
   line-height: 1.2rem;
   font-weight: 400;
@@ -664,6 +664,7 @@ h3 {
 
 .portfolio__tags {
   padding: 0 40px 8px;
+  user-select: none;
 }
 @media (max-width: 767px) {
   .portfolio__tags {
@@ -686,6 +687,7 @@ h3 {
 @media (max-width: 767px) {
   .portfolio__images ul {
     grid-template-columns: repeat(2, 1fr);
+    gap: 13px 13px;
     padding: 0 30px 30px 30px;
   }
 }
