@@ -693,6 +693,9 @@ h3 {
     padding: 0 30px 30px 30px;
   }
 }
+.portfolio__images ul li:nth-child(1n+13) {
+  display: none;
+}
 
 .portfolio__images img {
   width: 100%;
