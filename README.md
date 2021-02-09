@@ -4,3 +4,4 @@
 1. [Calculator](https://dzimitron.github.io/rsschool-cv/calculator/index.html)
 1. [Dynamic Landing Page](https://dzimitron.github.io/rsschool-cv/dynamic-landing-page/index.html)
 1. [Meditation App](https://dzimitron.github.io/rsschool-cv/meditation-app-master/index.html)
+1. [Drum Kit](https://dzimitron.github.io/rsschool-cv/drum-kit/index.html)
