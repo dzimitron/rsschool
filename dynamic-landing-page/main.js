@@ -10,11 +10,7 @@
     question = doc.createElement('h2'),
     focus = doc.createElement('h2'),
 
-    timeContent = doc.createTextNode(''),
-    toggleContent = doc.createTextNode(''),
-    questionContent = doc.createTextNode('What Is Your Focus For Today?'),
-    nameContent = doc.createTextNode(''),
-    focusContent = doc.createTextNode('');
+    questionContent = doc.createTextNode('What Is Your Focus For Today?');
   
   name.contentEditable = 'true';
   focus.contentEditable = 'true';
@@ -59,7 +55,7 @@ function showTime() {
 
 // Add Zeros
 function addZero(n) {
-  return (n < 10 ? '0' : '') + n;
+  return String(n).padStart(2, '0');
 }
 
 // Set Background and Greeting
@@ -81,57 +77,48 @@ function setBgGreet() {
   }
 }
 
-// Get Name
-function getName() {
-  if (localStorage.getItem('name') == null) {
-    name.textContent = '[Enter Name]';
-  } else {
-    name.textContent = localStorage.getItem('name');
-  }
+// Initialization Name and Focus
+function setValueFromStorageIntoInput(input, storageKey) {
+  input.textContent = localStorage.getItem(storageKey) || `[Enter ${storageKey}]`;
 }
 
-// Set Name
+function initializeName() {
+  setValueFromStorageIntoInput(name, 'name');
+}
+
+function initializeFocus() {
+  setValueFromStorageIntoInput(focus, 'focus');
+}
+
+// Set Name and Focus
+function setStorageValueFromInput(storageKey, event) {
+  localStorage.setItem(storageKey, event.target.innerText);
+}
+
 function setName(e) {
-  if (e.type === 'keypress') {
-    if (e.which == 13 || e.keyCode == 13) {
-      localStorage.setItem('name', e.target.innerText);
-      name.blur();  
-    }
-  } else {
-    localStorage.setItem('name', e.target.innerText);
-  }
+  setStorageValueFromInput('name', e);
 }
 
-// Get Focus
-function getfocus() {
-  if (localStorage.getItem('focus') == null) {
-    focus.textContent = '[Enter Focus]';
-  } else {
-    focus.textContent = localStorage.getItem('focus');
-  }
-}
-
-// Set Focus
 function setFocus(e) {
-  if (e.type === 'keypress') {
-    if (e.which == 13 || e.keyCode == 13) {
-      localStorage.setItem('focus', e.target.innerText);
-      focus.blur();  
-    }
-  } else {
-    localStorage.setItem('focus', e.target.innerText);
+  setStorageValueFromInput('focus', e);
+}
+
+// Blur on Enter
+function blurOnEnter(e) {
+  if (e.key === 'Enter') {
+    e.target.blur();
   }
 }
 
-name.addEventListener('keypress', setName);
+name.addEventListener('keypress', blurOnEnter);
 name.addEventListener('blur', setName);
-focus.addEventListener('keypress', setFocus);
+focus.addEventListener('keypress', blurOnEnter);
 focus.addEventListener('blur', setFocus);
 
 // Run
 showTime();
 setBgGreet();
-getName();
-getfocus();
+initializeName();
+initializeFocus();
 
 })();
