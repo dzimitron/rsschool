@@ -1,1 +1,0 @@
-1. [Calculator](https://dzimitron.github.io/rsschool-cv/calculator/index.html)
