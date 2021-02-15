@@ -39,11 +39,6 @@ body,html {
   padding: 1rem .5rem;
 }
 
-.key kbd,
-.key span {
-  pointer-events: none;
-}
-
 .auto {
   align-self: center;
   padding: 1rem .5rem;
@@ -53,7 +48,9 @@ body,html {
 }
 
 .active {
-  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #000000;
 }
 
 .playing {
