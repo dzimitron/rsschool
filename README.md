@@ -5,3 +5,4 @@
 1. [Dynamic Landing Page](https://dzimitron.github.io/rsschool-cv/dynamic-landing-page/index.html)
 1. [Meditation App](https://dzimitron.github.io/rsschool-cv/meditation-app-master/index.html)
 1. [Drum Kit](https://dzimitron.github.io/rsschool-cv/drum-kit/index.html)
+1. [CSS Variables and JS](https://dzimitron.github.io/rsschool-cv/css-variables-and-js/index.html)
