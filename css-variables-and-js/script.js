@@ -10,23 +10,31 @@ const app = () => {
     shadow: '#444044',
   };
 
-  console.log(Object.keys(dayTheme));
+  function setValueColor() {
+    for (let key in dayTheme) {
+      root.style.setProperty(`--${key}`, `${dayTheme[key]}`);
+    }
+  }
 
   dayNightSwitch.addEventListener('click', function() {
     dayNightSwitch.classList.toggle('switch');
     if (dayNightSwitch.classList.contains('switch')) {
-      root.style.setProperty('--background', '#e0caca');
-      root.style.setProperty('--base', '#969595');
-      root.style.setProperty('--shadow-color', '#444044');
+      setValueColor();
     } else document.location.reload();
   });
 
-  ['change', 'mousemove'].forEach(function(event) {
-    inputs.forEach(el => el.addEventListener(event, () => {
-      const suffix = el.dataset.sizing || '';
-      document.documentElement.style.setProperty(`--${el.name}`, el.value + suffix);
-    }));
-  });
+  function setValueProperty(el) {
+    ['change', 'mousemove'].forEach(function(event) {
+      el.addEventListener(event, () => {
+        const suffix = el.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${el.name}`, el.value + suffix);
+      });
+    });
+  }
+
+  inputs.forEach(e => e.addEventListener('click', function({target}) {
+    setValueProperty(target);
+  }));
 
 }
 
