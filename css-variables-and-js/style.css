@@ -5,6 +5,8 @@
   --shadow-size: 20px;
   --shadow: #2b2b2b;
   --background: #000000;
+  --border-radius: 10px;
+  --box-shadow: 10px 10px 0px 0px var(--shadow);
 }
 
 .image {
@@ -40,8 +42,8 @@ body {
   margin: 0;
   max-width: 30%;
   background: var(--base);
-  border-radius: 10px;
-  box-shadow: 10px 10px 0px 0px var(--shadow);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .logo span {
@@ -69,8 +71,8 @@ body {
   justify-content: space-around;
   margin-bottom: 0px;
   background: var(--base);
-  border-radius: 10px;
-  box-shadow: 10px 10px 0px 0px var(--shadow);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .controls div {

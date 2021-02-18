@@ -23,19 +23,16 @@ const app = () => {
     } else document.location.reload();
   });
 
-  function setValueProperty(el) {
-    ['change', 'mousemove'].forEach(function(event) {
-      el.addEventListener(event, () => {
-        const suffix = el.dataset.sizing || '';
-        document.documentElement.style.setProperty(`--${el.name}`, el.value + suffix);
-      });
-    });
+  function setValueProperty() {
+    const el = this;
+    const suffix = el.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${el.name}`, el.value + suffix);
   }
 
-  inputs.forEach(e => e.addEventListener('click', function({target}) {
-    setValueProperty(target);
-  }));
-
+  inputs.forEach(e => {
+    e.addEventListener('input', setValueProperty);
+  });
+  
 }
 
 app();
