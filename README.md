@@ -7,4 +7,3 @@
 1. https://dzimitron.github.io/rsschool-cv/drum-kit/index.html
 1. https://dzimitron.github.io/rsschool-cv/css-variables-and-js/index.html
 1. https://dzimitron.github.io/rsschool-cv/flex-panel-gallery/index.html
-1. 
