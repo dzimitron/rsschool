@@ -36,6 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: default;
 }
 
 .panel1 { 
