@@ -20,6 +20,7 @@ const numberPress = (number) => {
         display.value = number;
         memoryNewNumber = false;
     } else display.value === "0" ? display.value = number : display.value += number;
+    display.value = display.value.substring(0, 16);
 };
 
 
