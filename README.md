@@ -7,3 +7,4 @@
 1. [Drum Kit](https://dzimitron.github.io/rsschool-cv/drum-kit/index.html)
 1. [CSS Variables and JS](https://dzimitron.github.io/rsschool-cv/css-variables-and-js/index.html)
 1. [Flex Panel Gallery](https://dzimitron.github.io/rsschool-cv/flex-panel-gallery/index.html)
+1. [Fun with HTML5 Canvas](https://dzimitron.github.io/rsschool-cv/canvas/index.html)
