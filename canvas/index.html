@@ -8,18 +8,19 @@
 </head>
 <body>
   
-  <div class="container">
-    <div class="menu">
-      <div class="size">
-        <select name="select_size" id="width"></select>
-      </div>
-      <div class="color_wrap">
-        <input id="color" type="color"/>
-      </div>
+  <div class="menu">
+    <div class="size">
+      <select name="select_size" id="width">
+        <option selected>Size</option>
+      </select>
     </div>
-    <canvas id="draw" width="800" height="800"></canvas>
+    <div class="color_wrap">
+      <input id="color" type="color"/>
+    </div>
+    <button id="clear">Clear canvas</button>
   </div>
-
+  <canvas id="draw" width="800" height="800"></canvas>
+  
 <script src="main.js"></script>
 </body>
 </html>
