@@ -1,12 +1,14 @@
 html {
   font-size: 10px;
-  background: url('./background.jpg') bottom center;
+  background: url("./background.jpg") bottom center;
   background-size: cover;
 }
 
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -15,36 +17,37 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  flex-wrap: wrap;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
 }
 
 .key,
 .auto {
-  border: .4rem solid rgb(255, 255, 255);
-  border-radius: .5rem;
+  border: 0.4rem solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
   font-size: 1.5rem;
-  transition: all .07s ease;
+  transition: all 0.07s ease;
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem rgb(197, 2, 2);
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem rgb(197, 2, 2);
   cursor: pointer;
 }
 
 .key {
-  margin: 1rem 1rem 15rem 1rem;
-  padding: 1rem .5rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .auto {
   align-self: center;
-  padding: 1rem .5rem;
-  margin: 10rem 0 0 0;
-  color: #ffc600;  
-  text-shadow: 0 0 .5rem black;
+  padding: 1rem 0.5rem;
+  margin: 10rem 0 1rem 0;
+  color: #ffc600;
+  text-shadow: 0 0 0.5rem black;
 }
 
 .active {
@@ -67,6 +70,6 @@ kbd {
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: #ffc600;
 }
