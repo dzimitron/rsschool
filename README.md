@@ -1,0 +1,9 @@
+1. https://dzimitron.github.io/rsschool/cv
+1. https://dzimitron.github.io/rsschool/index.html
+1. https://dzimitron.github.io/rsschool/markup/index.html
+1. https://dzimitron.github.io/rsschool/calculator/index.html
+1. https://dzimitron.github.io/rsschool/dynamic-landing-page/index.html
+1. https://dzimitron.github.io/rsschool/meditation-app-master/index.html
+1. https://dzimitron.github.io/rsschool/drum-kit/index.html
+1. https://dzimitron.github.io/rsschool/css-variables-and-js/index.html
+1. https://dzimitron.github.io/rsschool/flex-panel-gallery/index.html
