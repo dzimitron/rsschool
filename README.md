@@ -4,7 +4,7 @@
 1. [Calculator](https://dzimitron.github.io/rsschool/calculator/index.html)
 1. [Dynamic Landing Page](https://dzimitron.github.io/rsschool/dynamic-landing-page/index.html)
 1. [Meditation App](https://dzimitron.github.io/rsschool/meditation-app-master/index.html)
-1. [Drum Kit](https://dzimitron.github.io/rsschool/drum-kit/index.html)
+1. [Drum Kit](https://dzimitron.github.io/rsschool/drum-kit/markup/index.html)
 1. [CSS Variables and JS](https://dzimitron.github.io/rsschool/css-variables-and-js/index.html)
 1. [Flex Panel Gallery](https://dzimitron.github.io/rsschool/flex-panel-gallery/index.html)
 1. [Fun with HTML5 Canvas](https://dzimitron.github.io/rsschool/canvas/index.html)
