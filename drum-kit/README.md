@@ -7,6 +7,6 @@
 - Код: https://github.com/wesbos/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit (19 lines js-code)
 - Demo: https://js3001.github.io/
 
-### [My version](https://dzimitron.github.io/rsschool/drum-kit/index.html)
+### [My version](https://dzimitron.github.io/rsschool/drum-kit/markup/index.html)
 
-https://dzimitron.github.io/rsschool/drum-kit/index.html
+https://dzimitron.github.io/rsschool/drum-kit/markup/index.html
