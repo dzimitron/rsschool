@@ -6,6 +6,6 @@
 - Код: https://github.com/wesbos/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas (54 lines js-code)
 - Demo: https://canvas30.github.io/
 
-### [My version](https://dzimitron.github.io/rsschool-cv/canvas/app/index.html)
+### [My version](https://dzimitron.github.io/rsschool/canvas/app/index.html)
 
-https://dzimitron.github.io/rsschool-cv/canvas/app/index.html
+https://dzimitron.github.io/rsschool/canvas/app/index.html
