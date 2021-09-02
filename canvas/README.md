@@ -8,4 +8,4 @@
 
 ### [My version](https://dzimitron.github.io/rsschool/canvas/app/index.html)
 
-https://dzimitron.github.io/rsschool/canvas/app/index.html
+https://dzimitron.github.io/rsschool/canvas/app/src/index.html
