@@ -1,5 +1,5 @@
 1. https://dzimitron.github.io/rsschool/cv
-1. https://dzimitron.github.io/rsschool/index.html
+1. https://dzimitron.github.io/rsschool/cv/index.html
 1. https://dzimitron.github.io/rsschool/markup/index.html
 1. https://dzimitron.github.io/rsschool/calculator/index.html
 1. https://dzimitron.github.io/rsschool/dynamic-landing-page/index.html
