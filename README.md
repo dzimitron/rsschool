@@ -1,5 +1,5 @@
 1. [Cv](https://dzimitron.github.io/rsschool/cv)
-1. [Cv/index.html](https://dzimitron.github.io/rsschool/index.html)
+1. [Cv/index.html](https://dzimitron.github.io/rsschool/cv/index.html)
 1. [Singolo](https://dzimitron.github.io/rsschool/markup/index.html)
 1. [Calculator](https://dzimitron.github.io/rsschool/calculator/index.html)
 1. [Dynamic Landing Page](https://dzimitron.github.io/rsschool/dynamic-landing-page/index.html)
