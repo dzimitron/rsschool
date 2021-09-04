@@ -1,1 +1,0 @@
-https://dzimitron.github.io/rsschool-cv/cv
