@@ -1,6 +1,8 @@
 import { Canvas } from './Canvas';
 import { Menu } from './Menu';
 
+import './style.css';
+
 const DEFAULT_COLOR = '#ff0000';
 const LINE_STYLE = 'round';
 
