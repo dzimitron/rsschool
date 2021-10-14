@@ -44,6 +44,7 @@ export class Menu {
         menuMarker.append(markerContainer);
 
         const size = document.createElement('div');
+        size.classList.add('size');
 
         const showSize = document.createElement('div');
         showSize.classList.add('show-size');

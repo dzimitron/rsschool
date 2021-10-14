@@ -97,7 +97,7 @@
   border: 1px solid #fff;
 }
 
-.size {
+.size input {
   align-self: flex-end;
   cursor: pointer;
 }

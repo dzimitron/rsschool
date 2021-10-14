@@ -24,12 +24,10 @@ const app = (rootElement, width, height) => {
     color: DEFAULT_COLOR,
     size: DEFAULT_SIZE,
     onSizeUpdate: (size) => canvas.setSize(size),
-    onColorUpdate: (color) => {
-      canvas.setColor(color);
-    },
+    onColorUpdate: (color) => canvas.setColor(color),
     onClear: () => canvas.clear(),
   });
-
+ 
   rootElement.prepend(menu.root);
   
   function setBackgroundApp() {
